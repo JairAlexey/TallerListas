@@ -7,12 +7,16 @@ public class Interfaz extends JFrame{
     private JTextField textFieldEliminarID;
     private JTextField textFieldBuscarID;
     private JButton BtnIngresar;
-    private JButton BtnEliminar;
-    private JButton BtnBuscar;
+    private JButton BtnEliminarxID;
+    private JButton BtnBuscarxID;
     private JButton BtnCalcular;
     private JTextArea textArea1;
     private JPanel JPanelPrincipal;
     private JTextField textFieldNumPag;
+    private JButton BtnEliminarxNombre;
+    private JButton BtnBuscarxNombre;
+    private JTextField textFieldBuscarNombre;
+    private JTextField textFieldEliminarNombre;
 
     public Interfaz(){
 
@@ -27,7 +31,7 @@ public class Interfaz extends JFrame{
 
             }
         });
-        BtnBuscar.addActionListener(new ActionListener() {
+        BtnBuscarxID.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 b.buscarLibroPorId(Integer.parseInt(textFieldEliminarID.getText()));
@@ -39,10 +43,22 @@ public class Interfaz extends JFrame{
                 b.calcularTotalPaginas();
             }
         });
-        BtnEliminar.addActionListener(new ActionListener() {
+        BtnEliminarxID.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 b.eliminarLibroPorId(Integer.parseInt(textFieldEliminarID.getText()));
+            }
+        });
+        BtnBuscarxNombre.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                b.buscarLibroPorNombre(textFieldBuscarNombre.getText());
+            }
+        });
+        BtnEliminarxNombre.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                b.buscarLibroPorNombre(textFieldEliminarNombre.getText());
             }
         });
     }

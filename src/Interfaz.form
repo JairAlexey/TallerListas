@@ -34,7 +34,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="6a8b1" class="javax.swing.JButton" binding="BtnEliminar">
+      <component id="6a8b1" class="javax.swing.JButton" binding="BtnEliminarxID">
         <constraints>
           <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -42,7 +42,7 @@
           <text value="Eliminar"/>
         </properties>
       </component>
-      <component id="e4632" class="javax.swing.JButton" binding="BtnBuscar">
+      <component id="e4632" class="javax.swing.JButton" binding="BtnBuscarxID">
         <constraints>
           <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -158,7 +158,7 @@
           <text value="Ingrese el Nombre del libro a buscar:"/>
         </properties>
       </component>
-      <component id="ddf83" class="javax.swing.JTextField">
+      <component id="ddf83" class="javax.swing.JTextField" binding="textFieldEliminarNombre">
         <constraints>
           <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -168,7 +168,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="3345c" class="javax.swing.JTextField">
+      <component id="3345c" class="javax.swing.JTextField" binding="textFieldBuscarNombre">
         <constraints>
           <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -178,7 +178,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="9c651" class="javax.swing.JButton">
+      <component id="9c651" class="javax.swing.JButton" binding="BtnEliminarxNombre">
         <constraints>
           <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -186,7 +186,7 @@
           <text value="Eliminar"/>
         </properties>
       </component>
-      <component id="5c05b" class="javax.swing.JButton">
+      <component id="5c05b" class="javax.swing.JButton" binding="BtnBuscarxNombre">
         <constraints>
           <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
