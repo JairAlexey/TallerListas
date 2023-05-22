@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Interfaz extends JFrame{
+public class Interfaz extends JFrame {
     private JTextField textFieldIngresoNombre;
     private JTextField textFieldEliminarID;
     private JTextField textFieldBuscarID;
@@ -18,23 +18,22 @@ public class Interfaz extends JFrame{
     private JTextField textFieldBuscarNombre;
     private JTextField textFieldEliminarNombre;
 
-    public Interfaz(){
+    Biblioteca b = new Biblioteca();
+
+    public Interfaz() {
 
         setContentPane(JPanelPrincipal);
-
-        Biblioteca b = new Biblioteca();
 
         BtnIngresar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 b.agregarLibro(textFieldIngresoNombre.getText(), Integer.parseInt(textFieldNumPag.getText()));
-
             }
         });
         BtnBuscarxID.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                b.buscarLibroPorId(Integer.parseInt(textFieldEliminarID.getText()));
+
             }
         });
         BtnCalcular.addActionListener(new ActionListener() {
@@ -46,7 +45,7 @@ public class Interfaz extends JFrame{
         BtnEliminarxID.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                b.eliminarLibroPorId(Integer.parseInt(textFieldEliminarID.getText()));
+
             }
         });
         BtnBuscarxNombre.addActionListener(new ActionListener() {
@@ -61,5 +60,9 @@ public class Interfaz extends JFrame{
                 b.buscarLibroPorNombre(textFieldEliminarNombre.getText());
             }
         });
+
     }
 }
+
+
+

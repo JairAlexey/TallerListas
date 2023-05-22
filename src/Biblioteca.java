@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -18,8 +19,9 @@ public class Biblioteca {
             Libro libro = new Libro(nombre, numPag);
             libros.add(libro);
             ordenarLibrosPorId();
+            JOptionPane.showMessageDialog(null,"Se ha ingresado el libro exitosamente");
         } else {
-            System.out.println("Ya existe un libro con el mismo nombre.");
+            JOptionPane.showMessageDialog(null,"Ya existe un libro con el mismo nombre.");
         }
     }
 
@@ -27,8 +29,9 @@ public class Biblioteca {
         Libro libro = buscarLibroPorId(idLibro);
         if (libro != null) {
             libros.remove(libro);
+            JOptionPane.showMessageDialog(null,"Se elimino el libro exitosamente");
         } else {
-            System.out.println("No se encontró un libro con el ID especificado.");
+            JOptionPane.showMessageDialog(null,"No se encontró un libro con el ID especificado.");
         }
     }
 
@@ -36,8 +39,9 @@ public class Biblioteca {
         Libro libro = buscarLibroPorNombre(nombreLibro);
         if (libro != null) {
             libros.remove(libro);
+            JOptionPane.showMessageDialog(null,"Se elimino el libro exitosamente.");
         } else {
-            System.out.println("No se encontró un libro con el nombre especificado.");
+            JOptionPane.showMessageDialog(null, "No se encontró un libro con el nombre especificado.");
         }
     }
 
@@ -45,17 +49,21 @@ public class Biblioteca {
         ordenarLibrosPorId();
         int indice = busquedaBinariaPorId(idLibro);
         if (indice != -1) {
+            JOptionPane.showMessageDialog(null,"El libro es: " +libros.get(indice));
             return libros.get(indice);
         }
+        JOptionPane.showMessageDialog(null,"No se encontro ningun libro");
         return null;
     }
 
     public Libro buscarLibroPorNombre(String nombreLibro) {
         for (Libro libro : libros) {
             if (libro.getNombre().equalsIgnoreCase(nombreLibro)) {
+                JOptionPane.showMessageDialog(null,"El libro es: " +libro);
                 return libro;
             }
         }
+        JOptionPane.showMessageDialog(null,"No se encontro ningun libro");
         return null;
     }
 
